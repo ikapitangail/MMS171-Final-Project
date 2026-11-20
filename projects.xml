@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projects>
+
+    <project>
+        <title>Photography Portfolio</title>
+        <description>
+            A personal collection of my photography works,
+            showcasing the places I have explored, moments
+            I have captured, and my creative perspective.
+        </description>
+        <date>2026</date>
+    </project>
+
+    <project>
+        <title>Places Through My Lens</title>
+        <description>
+            Video project where I capture my visits to
+            different places while documenting the experiences,
+            surroundings, and little moments.
+        </description>
+        <date>2026</date>
+    </project>
+
+    <project>
+        <title>Trying New Things</title>
+        <description>
+            Personal documentation project for 2027,
+            where I challenge myself to try new activities,
+            explore unfamiliar experiences, and document
+            what I learn along the way.
+        </description>
+        <date>2027</date>
+    </project>
+
+</projects>

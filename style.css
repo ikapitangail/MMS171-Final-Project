@@ -1,0 +1,320 @@
+
+/* ---------------------------------
+   General page styling
+--------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #121212;
+    background-image: radial-gradient(#3E3E3E 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.page-container {
+    max-width: 58rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(24, 24, 24, 0.78); /* ~78% see-through tint of #181818 */
+    border: 1px solid #333333;
+    border-radius: 0.5rem;
+}
+
+/* ---------------------------------
+   Header
+--------------------------------- */
+
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem 2.5rem;
+}
+
+.eyebrow {
+    color: #1ED760;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem;
+}
+
+h1 {
+    color: #BFA2FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.08rem;
+    margin: 0;
+}
+
+.tagline {
+    color: #FF78B9;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0.75rem 0 0;
+}
+
+.header-note {
+    color: #CCCCCC;
+    margin: 0.75rem 0 0;
+}
+
+/* ---------------------------------
+   Sections and headings
+--------------------------------- */
+
+section {
+    margin: 2rem 0;
+    padding: 0.5rem 0;
+}
+
+.section-heading {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #BFA2FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.04rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #383838;
+    margin: 1.75rem 0;
+}
+
+/* ---------------------------------
+   About Me: Flexbox layout
+--------------------------------- */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: #242126;
+    border-left: 0.3rem solid #1ED760;
+    border-radius: 0.4rem;
+}
+
+.photo-placeholder {
+    width: 11rem;
+    min-width: 11rem;
+    height: 11rem;
+    overflow: hidden;
+    padding: 0;
+    background-color: #38265C;
+    border: 2px solid #BFA2FF;
+    border-radius: 0.4rem;
+}
+
+.photo-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* ---------------------------------
+   Things I Love
+--------------------------------- */
+
+.love-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.love-list li {
+    padding: 0.8rem 1rem;
+    background-color: #29232F;
+    border-left: 0.25rem solid #1ED760;
+    border-radius: 0.3rem;
+    font-weight: 800;
+}
+
+.love-list li:nth-child(2) {
+    border-left-color: #FF78B9;
+}
+
+.love-list li:nth-child(3) {
+    border-left-color: #FF9F43;
+}
+
+.love-list li:nth-child(4) {
+    border-left-color: #BFA2FF;
+}
+
+.love-list li:nth-child(5) {
+    border-left-color: #1ED760;
+}
+
+.love-list span {
+    color: #1ED760;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
+/* ---------------------------------
+   Passion Projects
+--------------------------------- */
+
+.section-intro {
+    max-width: 42rem;
+    margin-bottom: 1.25rem;
+    color: #DDDDDD;
+}
+
+.video-card {
+    padding: 1rem;
+    background-color: #38265C;
+    border-radius: 0.4rem;
+    margin: 1.25rem 0;
+}
+
+.card-label {
+    color: #1ED760;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.75rem;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.3rem;
+}
+
+.portfolio-note {
+    padding: 1rem 1.25rem;
+    background-color: #29232F;
+    border-left: 0.3rem solid #FF78B9;
+    border-radius: 0.3rem;
+}
+
+.portfolio-note p {
+    margin-bottom: 0.25rem;
+}
+
+/* ---------------------------------
+   Links and contact
+--------------------------------- */
+
+a {
+    color: #1ED760;
+    font-weight: 800;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2rem;
+}
+
+a:hover {
+    color: #BFA2FF;
+}
+
+.contact-links {
+    padding: 1rem 1.25rem;
+    background-color: #242126;
+    border-radius: 0.4rem;
+}
+
+.contact-links p {
+    margin: 0.4rem 0;
+}
+
+/* ---------------------------------
+   Footer
+--------------------------------- */
+
+footer {
+    color: #999999;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+}
+
+/* ---------------------------------
+   Mobile layout
+--------------------------------- */
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    .page-container {
+        padding: 1.25rem;
+        border-radius: 0.4rem;
+    }
+
+    .page-header {
+        padding: 1.5rem 0.25rem 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .photo-placeholder {
+        width: 100%;
+        min-width: 0;
+        min-height: 14rem;
+    }
+
+    .love-list {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 1.5rem 0;
+    }
+}
